@@ -1,0 +1,19 @@
+{
+  "name": "CMD-F++",
+  "version": "1.0",
+  "description": "Chrome extension which scrapes only the data relating to input",
+  "manifest_version": 3,
+  "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "downloads"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+      "default_popup": "src/popup.html",
+      "default_icon": "src/icon_ext.png"
+  }
+}
